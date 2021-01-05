@@ -24,7 +24,7 @@ class UserProfile {
     this.address,
   });
 
-  String id;
+  int id;
   String fullName;
   String userName;
   String age;
