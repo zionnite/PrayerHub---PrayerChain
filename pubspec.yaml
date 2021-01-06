@@ -55,7 +55,12 @@ flutter:
         - asset: assets/fonts/Oxygen-Light.ttf
         - asset: assets/fonts/Oxygen-Bold.ttf
 
-
     - family: NerkoOne
       fonts:
         - asset: assets/fonts/NerkoOne-Regular.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+        - weight: 700
