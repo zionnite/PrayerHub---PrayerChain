@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     'Prayer Chain',
                     style: TextStyle(
-                      fontSize: 25.0,
+                      fontSize: 30.0,
                       fontFamily: 'Pacifico',
                       fontWeight: FontWeight.bold,
                     ),
@@ -42,86 +42,103 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 2.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  child: Column(
                     children: [
-                      Image.asset(
-                        'assets/images/av.png',
-                        width: 150,
-                        fit: BoxFit.cover,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: Text(
+                          'Prayer Partner',
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontFamily: 'Lobster',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(top: 20.0, left: 10.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Nosakhare Zionnite',
-                                style: TextStyle(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                    top: 8.0, bottom: 10.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Text(
-                                        '09034286339',
-                                        style: TextStyle(
-                                          fontSize: 15.0,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 0, bottom: 0.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Sister',
-                                      style: TextStyle(
-                                        fontSize: 15.0,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            'assets/images/av.png',
+                            width: 150,
+                            fit: BoxFit.cover,
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(top: 20.0, left: 10.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  RoundIconButton(
-                                    icon: Icons.comment,
-                                    onPressed: () {},
+                                  Text(
+                                    'Nosakhare Zionnite',
+                                    style: TextStyle(
+                                      fontSize: 20.0,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
-                                  SizedBox(
-                                    width: 10.0,
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 8.0, bottom: 10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            '09034286339',
+                                            style: TextStyle(
+                                              fontSize: 15.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  RoundIconButton(
-                                    icon: Icons.call,
-                                    onPressed: () {},
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 0, bottom: 0.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'Sister',
+                                          style: TextStyle(
+                                            fontSize: 15.0,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  SizedBox(
-                                    width: 10.0,
-                                  ),
-                                  RoundIconButton(
-                                    icon: Icons.video_call,
-                                    onPressed: () {},
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      RoundIconButton(
+                                        icon: Icons.comment,
+                                        onPressed: () {},
+                                      ),
+                                      SizedBox(
+                                        width: 10.0,
+                                      ),
+                                      RoundIconButton(
+                                        icon: Icons.call,
+                                        onPressed: () {},
+                                      ),
+                                      SizedBox(
+                                        width: 10.0,
+                                      ),
+                                      RoundIconButton(
+                                        icon: Icons.video_call,
+                                        onPressed: () {},
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                            ],
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                     ],
                   ),
@@ -163,19 +180,91 @@ class _HomePageState extends State<HomePage> {
                               color: Colors.green,
                               padding: EdgeInsets.symmetric(
                                   horizontal: 10.0, vertical: 3.0),
-                              child: Text(
-                                'Join',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Chat',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 5.0,
+                                  ),
+                                  Icon(
+                                    Icons.comment,
+                                    size: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                          SizedBox(
-                            width: 20,
+                          Expanded(
+                            child: SizedBox(
+                              width: 20,
+                            ),
                           ),
-                          Text(
-                            'Group is Active',
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, ChatPage.id);
+                            },
+                            child: Container(
+                              color: Colors.green,
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 10.0, vertical: 3.0),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Call',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 5.0,
+                                  ),
+                                  Icon(
+                                    Icons.call,
+                                    size: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: SizedBox(
+                              width: 20,
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, ChatPage.id);
+                            },
+                            child: Container(
+                              color: Colors.green,
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 10.0, vertical: 3.0),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'Video',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 5.0,
+                                  ),
+                                  Icon(
+                                    Icons.video_call,
+                                    size: 15.0,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
                         ],
                       ),
