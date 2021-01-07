@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:prayer_hub/bottom_navigation.dart';
 import 'package:prayer_hub/pages/chat_page.dart';
 import 'package:prayer_hub/pages/home_page.dart';
 import 'package:prayer_hub/pages/login_page.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
+        Nav.id: (context) => Nav(),
         LoginPage.id: (context) => LoginPage(),
         SignupPage.id: (context) => SignupPage(),
         HomePage.id: (context) => HomePage(),

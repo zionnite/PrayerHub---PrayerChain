@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:prayer_hub/bottom_navigation.dart';
+import 'package:prayer_hub/pages/home_page.dart';
+import 'package:prayer_hub/pages/signu_page.dart';
 
 class LoginPage extends StatefulWidget {
   static const String id = 'login_screen';
@@ -83,8 +86,10 @@ class _LoginPageState extends State<LoginPage> {
                           shadowColor: Colors.greenAccent,
                           color: Colors.green,
                           elevation: 7.0,
-                          child: GestureDetector(
-                            onTap: () {},
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, Nav.id);
+                            },
                             child: Center(
                               child: Text(
                                 'LOGIN',
@@ -111,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(width: 5.0),
                   InkWell(
                     onTap: () {
-                      Navigator.of(context).pushNamed('/signup');
+                      Navigator.pushNamed(context, SignupPage.id);
                     },
                     child: Text(
                       'Register',
