@@ -36,9 +36,9 @@ class _HomePageState extends State<HomePage> {
             Container(
               margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 5.0),
               child: Card(
-                elevation: 0,
+                elevation: 12,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(1),
                 ),
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 0.0, horizontal: 2.0),
