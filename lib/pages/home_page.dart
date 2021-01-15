@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prayer_hub/component/round_icon_button.dart';
+import 'package:prayer_hub/pages/agora_rm.dart';
 import 'package:prayer_hub/pages/chat_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -116,7 +117,10 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       RoundIconButton(
                                         icon: Icons.comment,
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, ChatPage.id);
+                                        },
                                       ),
                                       SizedBox(
                                         width: 10.0,

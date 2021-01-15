@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prayer_hub/bottom_navigation.dart';
 import 'package:prayer_hub/pages/home_page.dart';
-import 'package:prayer_hub/pages/signu_page.dart';
+import 'package:prayer_hub/pages/signup_page.dart';
 
 class LoginPage extends StatefulWidget {
   static const String id = 'login_screen';

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666220261387",
+    "project_id": "prayerchain-836d0",
+    "storage_bucket": "prayerchain-836d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666220261387:android:1515ed8bd47e790f60570e",
+        "android_client_info": {
+          "package_name": "com.prayerhub.prayer_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666220261387-uvg9dprdvdnqt0dpbhaqlu867gambfb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOtRuGIbVK5CV8fCtsp6ptG5HlPS_balQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666220261387-uvg9dprdvdnqt0dpbhaqlu867gambfb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
